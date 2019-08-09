@@ -24,3 +24,21 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.display-1{
+    font-size: 25.5vw;
+    text-align: center;
+    color:green;
+    padding:2rem;
+}
+
+.display-2{
+    font-size:40px;
+    text-align: center;
+    color:maroon;
+    padding:2rem;
+}
+
+.hidden{
+    display: none;
+}

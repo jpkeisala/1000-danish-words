@@ -1,0 +1,7 @@
+{
+  "appId": "com.jpkeisala.thousand.danish.words",
+  "appName": "Learn 1000 Danish Words",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

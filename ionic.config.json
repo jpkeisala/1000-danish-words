@@ -1,5 +1,7 @@
 {
-  "name": "1000-danish-words",
-  "integrations": {},
+  "name": "Learn 1000 Danish Words",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,14 +1,37 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <div class="score">{{totalWords}}/1000 words</div>
+  <div>
+
+      <div> 
+        <div *ngFor="let item of keyWord">
+            <div class="display-1">{{ item.Danish }}</div>
+            <div class="display-2" [hidden]=answerIshidden >{{ item.English }}</div>
+        </div>
+        </div>
+
+        
+  
   </div>
 </ion-content>
+
+<ion-footer  class="ion-text-center">
+    <ion-grid>
+        <ion-row>
+          <ion-col *ngFor="let item of words">
+              <ion-button expand="full" [id]="item.Number"
+    (click)="checkAnswer($event)">{{ item.English }}</ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-grid> 
+
+
+<br><br>
+</ion-footer>
